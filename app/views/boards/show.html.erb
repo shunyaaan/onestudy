@@ -1,0 +1,10 @@
+<h3>詳細</h3>
+<div class="board">
+    <b><%= @board.title %></b>
+    <p><%= @board.subject %>
+    <%= @board.grade %></p>
+    <%= @board.body %>
+    <p><%= @board.created_at %></p>
+    <%= link_to "編集する", edit_board_path(@board.id) %>
+</div>
+<%= link_to "一覧に戻る", boards_path %>

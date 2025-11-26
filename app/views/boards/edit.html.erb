@@ -1,0 +1,15 @@
+<%= form_for @board do |f| %>
+    <%= f.label :"投稿タイトル" %>
+    <%= f.text_field :title , :size => 140 %><br>
+
+    <%= f.label :"科目" %>
+    <%= f.text_field :subject , :size => 140 %><br>
+
+    <%= f.label :"学年" %>
+    <%= f.text_field :grade , :size => 140 %><br>
+
+    <%= f.label :"投稿内容" %>
+    <%= f.text_field :body , :size => 140 %><br>
+    <br>
+    <%= f.submit "投稿する" %>
+<% end %>
